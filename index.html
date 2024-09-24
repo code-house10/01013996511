@@ -286,76 +286,6 @@ $(window).on('load', function()
 </script>
 
    
- <style>
-        .fixed-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #00bfa5;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .call-button {
-            display: flex;
-            align-items: center;
-            color: white;
-            text-decoration: none;
-        }
-
-        .call-txt {
-            margin-right: 10px;
-        }
-
-        .call-icon {
-            display: flex;
-        }
-
-        /* Popup Styles */
-        .popup-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .popup {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .popup h2 {
-            margin-bottom: 20px;
-        }
-
-        .popup button {
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .popup button.yes-btn {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        .popup button.no-btn {
-            background-color: #f44336;
-            color: white;
-        }
-    </style>
 
 </head>
 <body >
@@ -736,52 +666,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 </div>
 </div>
-<div id="Layer1" onclick="window.location.href='tel:0556381006';return false;">
-<div id="Layer1_Container">
-<div id="wb_Icon4">
-<a href="https://api.whatsapp.com/send/?phone=201271604375&text&app_absent=0"><div id="Icon4"><i class="fa fa-whatsapp"></i></div></a></div>
-</div>
-</div>
-<div id="preloader"></div>
 
-<!-- Popup HTML -->
-    <div class="popup-overlay" id="popupOverlay">
-        <div class="popup">
-            <h2>هل تريد الإتصال بنا؟</h2>
-            <button class="yes-btn" id="yesBtn">نعم</button>
-            <button class="no-btn" id="noBtn">لا</button>
-        </div>
-    </div>
 
-    <script>
-        // Get the call button and the popup elements
-        const callButton = document.getElementById('callButton');
-        const popupOverlay = document.getElementById('popupOverlay');
-        const yesBtn = document.getElementById('yesBtn');
-        const noBtn = document.getElementById('noBtn');
 
-        // Add an event listener to the call button
-        callButton.addEventListener('click', function (event) {
-            // Prevent the default action (making the call)
-            event.preventDefault();
-            // Show the popup
-            popupOverlay.style.display = 'flex';
-        });
 
-        // Handle the Yes button click
-        yesBtn.addEventListener('click', function () {
-            // Dial the phone number automatically
-            window.location.href = 'tel:0556381006';
-            // Close the popup
-            popupOverlay.style.display = 'none';
-        });
-
-        // Handle the No button click
-        noBtn.addEventListener('click', function () {
-            // Close the popup
-            popupOverlay.style.display = 'none';
-        });
-    </script>
 
 
 

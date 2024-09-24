@@ -285,76 +285,7 @@ $(window).on('load', function()
 });
 </script>
 
- <style>
-        .fixed-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #00bfa5;
-            padding: 10px;
-            border-radius: 5px;
-        }
 
-        .call-button {
-            display: flex;
-            align-items: center;
-            color: white;
-            text-decoration: none;
-        }
-
-        .call-txt {
-            margin-right: 10px;
-        }
-
-        .call-icon {
-            display: flex;
-        }
-
-        /* Popup Styles */
-        .popup-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .popup {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .popup h2 {
-            margin-bottom: 20px;
-        }
-
-        .popup button {
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .popup button.yes-btn {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        .popup button.no-btn {
-            background-color: #f44336;
-            color: white;
-        }
-    </style>
 
 </head>
 <body >
@@ -736,26 +667,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <div id="preloader"></div>
 
-
-
-<div id="custom-popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:#FFF; border:2px solid #000; padding:20px; z-index:999;">
-    <p>هل تريد الإتصال على 01013996511؟</p>
-    <button id="yesButton">نعم</button>
-    <button id="noButton">لا</button>
+<div class="altumcode altumcode-bottom_floating altumcode-clickable on-visible animation-heartbeat" data-position="bottom_floating" data-on-animation="fadeIn" data-off-animation="fadeOut" data-notification-id="45" style="display: block;" onclick="showPopup()">
+    <div role="dialog" class="altumcode-wrapper altumcode-wrapper-straight altumcode-informational-bar-wrapper" style="font-family: inherit!important;background-color: #FFFFFF;border-width: 2px;border-color: #000;padding: 12px !important;">
+        <div class="altumcode-informational-bar-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRofcooNa-q70tHCRKzxpEy7KVUb-oxkQt5wR_4K1VzOFjwi1m_gXIkkO1y68XLpRg80yU&usqp=CAU" class="altumcode-informational-bar-image" alt="" loading="lazy">
+            <div>
+                <div class="altumcode-informational-bar-header">
+                    <p class="altumcode-informational-bar-title" style="color: #000;"><span style="font-family:Cairo, sans-serif;">الحق عرض 33% خصم على نقل العفش</span></p>
+                </div>
+                <p class="altumcode-informational-bar-description" style="color: #000;"><span style="font-family:Cairo, sans-serif;">إتصل على 01013996511</span></p>
+            </div>
+        </div>
+    </div>
 </div>
 
+<!-- Popup Modal HTML -->
+<div id="popup" style="display:none; position: fixed; z-index: 1000; left: 50%; top: 50%; transform: translate(-50%, -50%); background-color: #FFF; border: 2px solid #000; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <p>هل تريد الإتصال على 01013996511؟</p>
+    <button id="yesButton" style="padding: 10px 20px; background-color: #28a745; color: white; border: none; cursor: pointer;">نعم</button>
+    <button id="noButton" style="padding: 10px 20px; background-color: #dc3545; color: white; border: none; cursor: pointer;">لا</button>
+</div>
+
+<!-- JavaScript -->
 <script>
+    // Show the popup when the user clicks on the div
     function showPopup() {
-        document.getElementById("custom-popup").style.display = "block";
+        document.getElementById("popup").style.display = "block";
     }
 
+    // Handle the "Yes" button click
     document.getElementById("yesButton").onclick = function() {
         window.location.href = "tel:01013996511";
     };
 
+    // Handle the "No" button click
     document.getElementById("noButton").onclick = function() {
-        document.getElementById("custom-popup").style.display = "none";
-        alert("تم إلغاء العملية.");
+        document.getElementById("popup").style.display = "none";
     };
 </script>
 

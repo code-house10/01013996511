@@ -285,12 +285,81 @@ $(window).on('load', function()
 });
 </script>
 
+   
+ <style>
+        .fixed-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00bfa5;
+            padding: 10px;
+            border-radius: 5px;
+        }
 
+        .call-button {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+        }
+
+        .call-txt {
+            margin-right: 10px;
+        }
+
+        .call-icon {
+            display: flex;
+        }
+
+        /* Popup Styles */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .popup h2 {
+            margin-bottom: 20px;
+        }
+
+        .popup button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup button.yes-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .popup button.no-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
 
 </head>
 <body >
 
-<noscript><iframe src="https://ob.esnchocco.com/ns/882439c901941a5862eeeb4b0732db18.html?ch=" width="0" height="0" style="display:none"></iframe></noscript>
    
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK4L6DDB"
@@ -345,6 +414,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <li role="menuitem"><a href="#LayoutGrid10" class="nav-link PanelMenu1-effect">&#1604;&#1604;&#1578;&#1608;&#1575;&#1589;&#1604;</a></li>
 </ul>
 </div>
+
+  <div class="topbar">
+            <div class="topbar-innr">
+               <div class="t-phone">
+              <a href="javascript:void(0);" onclick="confirmCall()">0556381006</a>
+            </div>
+
+
 
 </nav>
 </div>
@@ -420,7 +497,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="wb_Section5" class="card">
    <div id="Section5-card-body">
       <div id="Section5-card-item0"><img src="images/نسخة من Yellow White and Navy Blue Professional and Modern Business Growth Coach Instagram Post (6).jpg" width="1080" height="1080" alt="" title=""></div>
-      <div id="Section5-card-item1"><a href="tel:01013996511">اتصل الان</a></div>
+      <div id="Section5-card-item1"><a href="tel:0556381006">اتصل الان</a></div>
    </div>
 </div>
 </div>
@@ -484,7 +561,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="CardContainer1" class="owl-carousel owl-theme">
 <div id="wb_Section10" class="card">
    <div id="Section10-card-body">
-      <div id="Section10-card-item0"><a href="tel:01013996511">احجز اليوم</a></div>
+      <div id="Section10-card-item0"><a href="tel:0556381006">احجز اليوم</a></div>
       <div id="Section10-card-item1"><img src="images/Z8.jpg" width="581" height="1032" alt="" title=""></div>
       <div id="Section10-card-item2"><div id="Section10-card-item2-shape"></div></div>
 <svg style ="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
@@ -497,7 +574,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <div id="wb_Section12" class="card">
    <div id="Section12-card-body">
-      <div id="Section12-card-item0"><a href="tel:01013996511">احجز اليوم</a></div>
+      <div id="Section12-card-item0"><a href="tel:0556381006">احجز اليوم</a></div>
       <div id="Section12-card-item1"><img src="images/Z5.jpg" width="528" height="960" alt="" title=""></div>
       <div id="Section12-card-item2"><div id="Section12-card-item2-shape"></div></div>
 <svg style ="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
@@ -510,7 +587,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <div id="wb_Section11" class="card">
    <div id="Section11-card-body">
-      <div id="Section11-card-item0"><a href="tel:01013996511">احجز اليوم</a></div>
+      <div id="Section11-card-item0"><a href="tel:0556381006">احجز اليوم</a></div>
       <div id="Section11-card-item1"><img src="images/Z-7.jpg" width="528" height="960" alt="" title=""></div>
       <div id="Section11-card-item2"><div id="Section11-card-item2-shape"></div></div>
 <svg style ="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
@@ -659,7 +736,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 </div>
 </div>
-<div id="Layer1" onclick="window.location.href='tel: 01013996511';return false;">
+<div id="Layer1" onclick="window.location.href='tel:0556381006';return false;">
 <div id="Layer1_Container">
 <div id="wb_Icon4">
 <a href="https://api.whatsapp.com/send/?phone=201271604375&text&app_absent=0"><div id="Icon4"><i class="fa fa-whatsapp"></i></div></a></div>
@@ -681,31 +758,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </div>
 
-<!-- Popup Modal HTML -->
-<div id="popup" style="display:none; position: fixed; z-index: 1000; left: 50%; top: 50%; transform: translate(-50%, -50%); background-color: #FFF; border: 2px solid #000; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-    <p>هل تريد الإتصال على 01013996511؟</p>
-    <button id="yesButton" style="padding: 10px 20px; background-color: #28a745; color: white; border: none; cursor: pointer;">نعم</button>
-    <button id="noButton" style="padding: 10px 20px; background-color: #dc3545; color: white; border: none; cursor: pointer;">لا</button>
-</div>
 
-<!-- JavaScript -->
-<script>
-    // Show the popup when the user clicks on the div
-    function showPopup() {
-        document.getElementById("popup").style.display = "block";
-    }
+<!-- Popup HTML -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <h2>هل تريد الإتصال بنا؟</h2>
+            <button class="yes-btn" id="yesBtn">نعم</button>
+            <button class="no-btn" id="noBtn">لا</button>
+        </div>
+    </div>
 
-    // Handle the "Yes" button click
-    document.getElementById("yesButton").onclick = function() {
-        window.location.href = "tel:01013996511";
-    };
+    <script>
+        // Get the call button and the popup elements
+        const callButton = document.getElementById('callButton');
+        const popupOverlay = document.getElementById('popupOverlay');
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
 
-    // Handle the "No" button click
-    document.getElementById("noButton").onclick = function() {
-        document.getElementById("popup").style.display = "none";
-    };
-</script>
+        // Add an event listener to the call button
+        callButton.addEventListener('click', function (event) {
+            // Prevent the default action (making the call)
+            event.preventDefault();
+            // Show the popup
+            popupOverlay.style.display = 'flex';
+        });
 
+        // Handle the Yes button click
+        yesBtn.addEventListener('click', function () {
+            // Dial the phone number automatically
+            window.location.href = 'tel:0556381006';
+            // Close the popup
+            popupOverlay.style.display = 'none';
+        });
+
+        // Handle the No button click
+        noBtn.addEventListener('click', function () {
+            // Close the popup
+            popupOverlay.style.display = 'none';
+        });
+    </script>
 
 
 
